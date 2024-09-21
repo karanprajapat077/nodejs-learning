@@ -1,0 +1,23 @@
+{
+  "name": "my-contact-backent-project",
+  "version": "1.0.0",
+  "description": "learing express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nodejs-learning"
+  },
+  "author": "Karan RP",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
