@@ -1,6 +1,12 @@
-let http = require('http');
+let express = require('express');
+const dotevn = require('dotenv').config();
 
-http.createServer((req, res) => {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('Hello from my-contact-backend project first testing file');
-}).listen(8080)
+const app = express();
+
+port = process.env.PORT || 5000;
+
+app.use("/api/contacts", require("./routes/contactRoutes"));
+
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`)
+});
